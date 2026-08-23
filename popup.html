@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        width: 420px;
+        min-height: 300px;
+        max-height: 500px;
+        padding: 12px;
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .extension-logo {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+        object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+        z-index: 10;
+        background: white;
+        padding: 4px;
+    }
+
+    .list-wrap {
+        margin-top: 52px;
+        max-height: 430px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-right: 4px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .empty-state {
+        font-size: 15px;
+        color: #666;
+        text-align: center;
+        padding: 18px 12px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        margin-bottom: 12px;
+        padding: 8px 10px;
+        border-radius: 8px;
+        background: #ffffff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    }
+
+    .domain-logo {
+        width: 20px;
+        height: 20px;
+        border-radius: 4px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    .block-button,
+    .unblock-button {
+        margin-left: auto;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .block-button {
+        background-color: #e53935;
+    }
+
+    .unblock-button {
+        background-color: #2e7d32;
+    }
+
+    .block-button svg,
+    .unblock-button svg {
+        width: 18px;
+        height: 18px;
+        stroke: white;
+    }
+</style>
+<img class="extension-logo" src="icons/Ku.png" alt="Ku logo" />
+<div class="list-wrap">
+    <ul id="time-list"></ul>
+</div>
+
+<script src="popup.js"></script>
+</html>

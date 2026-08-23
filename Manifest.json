@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Time Tracker Extension",
+  "version": "1.0.0",
+  "description": "Track and monitor screen time usage and block distracting websites.",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "webNavigation",
+    "notifications",
+    "alarms",
+    "declarativeNetRequest",
+    "declarativeContent"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Screen Time Tracker",
+    "default_popup": "popup.html",
+    "default_icon": "icons/Ku.png"
+  },
+  "icons": {
+    "16": "icons/Ku.png",
+    "48": "icons/Ku.png",
+    "128": "icons/Ku.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,13 @@
+/*
+This is the styles for a blocked site
+*/
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* white background */
+  color: #333333; /* dark text */
+  font-family: Arial, sans-serif;
+}
